@@ -132,6 +132,13 @@ class ImageCacheController extends BaseController
                 // file found
                 return $image_path;
             }
+            
+            $fallback_path = $path.'/'.str_replace('..', '', config("imagecache.fallback_image"));
+
+	        if (file_exists($fallback_path) && is_file($fallback_path)) {
+		        // file found
+		        return $fallback_path;
+	        }
         }
 
         // file not found
