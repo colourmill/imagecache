@@ -67,5 +67,19 @@ return array(
     */
    
     'lifetime' => 43200,
+    
+    
+
+    /*
+    |--------------------------------------------------------------------------
+    | Fallback image
+    |--------------------------------------------------------------------------
+    |
+    | Use this image when the intended file can not be found. Place the
+    | fallback image in any of the "paths" configured above.
+    |
+    */
+   
+    'fallback_image' => 'placeholder.jpg',
 
 );
